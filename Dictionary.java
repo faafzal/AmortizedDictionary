@@ -1,4 +1,4 @@
-package org.pyte.amortizeddictionary;
+package amortizeddictionary;
 
 /**
  * 
