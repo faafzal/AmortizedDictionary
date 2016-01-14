@@ -38,7 +38,7 @@ public class AAD{
 		int[] tmp = {e};
 		//new dictionary object, pass singleton array 
 		Dictionary d = new Dictionary(tmp);
-		//add d to the current list the top, because it is the dictionary
+		//add d to the current list the top, because it is the smallest
 		this.getList().add(0, d);
 		//call the helper method to structure the list
 		this.structureList();
