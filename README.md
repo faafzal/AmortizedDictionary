@@ -1,4 +1,4 @@
-# AmortizedDictionary
+# Amortized Dictionary
 
 Inspiration behind this project:
 
