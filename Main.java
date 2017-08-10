@@ -66,7 +66,5 @@ public class Main {
 		
 		Dictionary d3 = aad.toDictionary();
 		d3.printElements();
-		
 	}
-
 }
