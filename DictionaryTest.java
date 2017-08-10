@@ -9,7 +9,6 @@ import org.junit.Test;
  * @author fafzal
  */
 public class DictionaryTest {
-	
 	//create a new dictionary object
 	Dictionary d = new Dictionary(new int[0]);
 
@@ -18,7 +17,6 @@ public class DictionaryTest {
 	 */
 	@Test
 	public void testAdd() {
-		
 		//adds values in unsorted order
 		d.add(2);
 		d.add(3);
@@ -29,16 +27,13 @@ public class DictionaryTest {
 		
 		//test against the sorted array
 		assertArrayEquals(d.getArray(), tmp);
-		
 	}
-	
 	
 	/*
 	 * test case for the remove method
 	 */
 	@Test
 	public void testRemove(){
-		
 		//adds unsorted values
 		d.add(4);
 		d.add(6);
@@ -52,7 +47,6 @@ public class DictionaryTest {
 		
 		//tests current array against new array
 		assertArrayEquals(d.getArray(), tmp);
-		
 	}
 	
 	/*
@@ -61,7 +55,6 @@ public class DictionaryTest {
 	 */
 	@Test 
 	public void testContainsTrue(){
-		
 		//adds values in unsorted order
 		d.add(8);
 		d.add(10);
@@ -69,7 +62,6 @@ public class DictionaryTest {
 		
 		//tests to see if it contains 10
 		assertEquals(d.contains(10), true);
-		
 	}
 	
 	/*
@@ -78,7 +70,6 @@ public class DictionaryTest {
 	 */
 	@Test
 	public void testContainsFalse(){
-		
 		//add values in unsorted order
 		d.add(11);
 		d.add(13);
@@ -86,7 +77,6 @@ public class DictionaryTest {
 		
 		//test if d contains is false on value 14
 		assertEquals(d.contains(14), false);
-		
 	}
 	
 	
@@ -95,7 +85,6 @@ public class DictionaryTest {
 	 */
 	@Test 
 	public void testMerge(){
-		
 		//create a new dictionary
 		Dictionary d1 = new Dictionary(new int[0]);
 		
@@ -117,7 +106,5 @@ public class DictionaryTest {
 		
 		//test d's array to merged sorted array
 		assertArrayEquals(d.getArray(), tmp);
-		
 	}
-
 }
