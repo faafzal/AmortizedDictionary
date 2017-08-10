@@ -10,7 +10,6 @@ import org.junit.Test;
  *
  */
 public class AADTest {
-	
 	//create a new AAD object
 	AAD aad = new AAD();
 
@@ -21,7 +20,6 @@ public class AADTest {
 	 */
 	@Test
 	public void testAdd() {
-		
 		//{2,3}
 		//{1,6,7,9}
 		//{2,4,5,8,9,14,20,25}
@@ -56,7 +54,6 @@ public class AADTest {
 		assertArrayEquals(aad.getList().get(0).getArray(), arr1);
 		assertArrayEquals(aad.getList().get(1).getArray(), arr2);
 		assertArrayEquals(aad.getList().get(2).getArray(), arr3);
-		
 	}
 	
 	/*
@@ -64,9 +61,7 @@ public class AADTest {
 	 */
 	@Test
 	public void testIsPowerOfTwoTrue(){
-
 		assertEquals(aad.isPowerOfTwo(16), true);
-		
 	}
 	
 	/*
@@ -74,9 +69,7 @@ public class AADTest {
 	 */
 	@Test
 	public void testIsPowerOfTwoFalse(){
-		
 		assertEquals(aad.isPowerOfTwo(10), false);
-		
 	}
 	
 	/*
@@ -84,7 +77,6 @@ public class AADTest {
 	 */
 	@Test
 	public void testRemoveContainsTrue(){
-		
 		aad.add(9);
 		aad.add(7);
 		aad.add(6);
@@ -96,7 +88,6 @@ public class AADTest {
 		int[] tmp = {1,3,6,7};
 		
 		assertArrayEquals(aad.getList().get(0).getArray(), tmp);
-		
 	}
 	
 	/*
@@ -104,7 +95,6 @@ public class AADTest {
 	 */
 	@Test
 	public void testRemoveContainsFalse(){
-		
 		aad.add(7);
 		aad.add(6);
 		aad.add(1);
@@ -115,7 +105,6 @@ public class AADTest {
 		int[] tmp = {1,3,6,7};
 		
 		assertArrayEquals(aad.getList().get(0).getArray(), tmp);
-		
 	}
 	
 	/*
@@ -123,7 +112,6 @@ public class AADTest {
 	 */
 	@Test
 	public void testContainsTrue(){
-		
 		aad.add(9);
 		aad.add(7);
 		aad.add(6);
@@ -131,20 +119,17 @@ public class AADTest {
 		aad.add(3);
 		
 		assertEquals(this.aad.contains(3), 0);	
-		
 	}
 	
 	/*
 	 * Test case  for contains method, hoping for it to be false
 	 */
 	public void testContainsFalse(){
-		
 		aad.add(7);
 		aad.add(6);
 		aad.add(1);
 		
 		assertEquals(aad.contains(5), -1);
-		
 	}
 	
 	/*
@@ -152,7 +137,6 @@ public class AADTest {
 	 */
 	@Test 
 	public void testToDictionary(){
-		
 		/*
 		 * Add values in unsorted fashion 
 		 */
@@ -180,9 +164,5 @@ public class AADTest {
 		// to dictionary should create a new dictionary with an array value
 		//that looks like arr.
 		assertArrayEquals(aad.toDictionary().getArray(), arr);
-		
 	}
-	
-
-
 }
