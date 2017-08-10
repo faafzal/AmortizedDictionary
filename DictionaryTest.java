@@ -79,7 +79,6 @@ public class DictionaryTest {
 		assertEquals(d.contains(14), false);
 	}
 	
-	
 	/*
 	 * test case for merge
 	 */
